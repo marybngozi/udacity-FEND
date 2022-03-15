@@ -1,0 +1,41 @@
+aside {
+  font-family: "Roboto", sans-serif;
+  padding: 20px 0px;
+  width: max(90%, 300px);
+  margin: 20px auto;
+}
+aside h3,
+.attr p,
+.attr h6 {
+  margin: 0;
+}
+aside h3 {
+  font-family: "Righteous", cursive;
+  font-size: 27px;
+}
+.attr {
+  margin-top: 25px;
+  border-bottom: 1px inset #0c4b6f;
+}
+.attr p {
+  font-size: 14px;
+  text-align: justify;
+}
+.attr h6 {
+  font-size: 16px;
+  color: #0c4b6f;
+  font-weight: 700;
+}
+.attr a {
+  display: block;
+  text-align: right;
+}
+/* Large Screens */
+@media (min-width: 901px) {
+  aside {
+    border-left: 1px solid #0c4b6f;
+    width: 90%;
+    padding: 20px 10px;
+    margin: 0 auto;
+  }
+}

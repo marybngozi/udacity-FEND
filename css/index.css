@@ -1,0 +1,56 @@
+@import url(./header.css);
+@import url(./main.css);
+@import url(./aside.css);
+@import url(./footer.css);
+
+* {
+  overflow-x: hidden;
+}
+body {
+  width: 100%;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 12vh;
+  grid-template-areas:
+    "hd"
+    "main"
+    "sd"
+    "ft";
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+header {
+  grid-area: hd;
+}
+aside {
+  grid-area: sd;
+}
+main {
+  grid-area: main;
+}
+footer {
+  grid-area: ft;
+}
+/* header,
+main,
+aside,
+footer {
+  border: 1px solid red;
+} */
+
+/* Large Screens */
+@media (min-width: 901px) {
+  body {
+    grid-template-columns: 80% 20%;
+    /* grid-template-rows: 10vh; */
+    grid-template-areas:
+      "hd hd"
+      "main sd"
+      "ft ft";
+  }
+}

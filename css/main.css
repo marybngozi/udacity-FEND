@@ -18,7 +18,10 @@ main {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
-.experience p {
+.experience figure {
+  margin: 0;
+}
+.experience figcaption {
   margin: 0;
   text-align: right;
   font-size: 17px;

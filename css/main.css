@@ -6,7 +6,6 @@ main {
   padding-top: 20px;
   row-gap: 50px;
 }
-
 .experience {
   width: min(90%, 300px);
   padding: 12px 0px;
@@ -35,6 +34,17 @@ main {
   font-size: 16px;
   text-align: justify;
   font-weight: 400;
+}
+.experience .btn-post {
+  margin: 7px;
+  padding: 10px;
+  border-radius: 16px;
+  background: #0c4b6f;
+}
+.experience .btn-post a {
+  text-decoration: none;
+  font-size: 17px;
+  color: #fff;
 }
 /* Medium Screens */
 @media (min-width: 768px) {
